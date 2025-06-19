@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Search Section */
+#search {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#search h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+#search form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+#search input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+#search input:focus {
+    border-color: #007bff;
+}
+
+#search button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#search button:hover {
+    background-color: #0056b3;
+}
+
+/* Gallery Section */
+#img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+#img img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #search form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #search input {
+        width: 100%;
+    }
+
+    #img {
+        padding: 20px;
+    }
+
+    #img img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
